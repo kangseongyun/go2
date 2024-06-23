@@ -1,0 +1,9 @@
+streamlit
+pandas
+streamlit_option_menu
+plotly
+numpy==1.21.0
+scipy
+prophet
+openpyxl
+pandas-datareader
