@@ -123,7 +123,7 @@ def optimize_data(mef_path_주중, mef_path_주말, e_path):
                     initial_power_usage_group[valid_indices_group][:-1]))
                 new_rates_group = np.append(0, np.diff(x) / (x[:-1]))
                 rate_change_diff_group = (new_rates_group - initial_rates_group) * 100
-                return np.concatenate([10 - rate_change_diff_group, rate_change_diff_group + 10])
+                return np.concatenate([20 - rate_change_diff_group, rate_change_diff_group + 20])
 
             # 계절 및 시간대별 조절 범위 제약 추가
             def resist4(x):
